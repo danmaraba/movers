@@ -1,17 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 :root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
-  --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
+  /* dark shades of brand color*/
+  --clr-brand-1: hsl(214, 28%, 12%);
+  --clr-brand-2: hsl(214, 47%, 19%);
+  --clr-brand-3: hsl(214, 58%, 29%);
+  --clr-brand-4: hsl(214, 68%, 43%);
+  /* brand/main color */
+  --clr-brand-5: hsl(214, 72%, 53%);
+  /* lighter shades of brand color */
+  --clr-brand-6: hsl(214, 80%, 65%);
+  --clr-brand-7: hsl(214, 86%, 77%);
+  --clr-brand-8: hsl(214, 95%, 87%);
+  --clr-brand-9: hsl(214, 98%, 90%);
+  --clr-brand-10: hsl(214, 100%, 92%);
+
+  /* dark shades of support color*/
+  --clr-support-1: hsl(223, 29%, 10%);
+  --clr-support-2: hsl(223, 45%, 15%);
+  --clr-support-3: hsl(223, 63%, 25%);
+  --clr-support-4: hsl(223, 73%, 34%);
+  /* support color */
+  --clr-support-5: hsl(223, 83%, 44%);
+  /* lighter shades of support color */
+  --clr-support-6: hsl(223, 80%, 65%);
+  --clr-support-7: hsl(223, 85%, 66%);
+  --clr-support-8: hsl(223, 96%, 67%);
+  --clr-support-9: hsl(223, 97%, 79%);
+  --clr-support-10: hsl(223, 100%, 92%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -69,4 +85,8 @@
   cursor:pointer;
   font-size:2rem;
   background:transparent;
+}
+
+.toggle-btn:hover{
+  color:var(--clr-support-5);
 }
