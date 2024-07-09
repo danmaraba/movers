@@ -110,3 +110,29 @@ body{
   transition:all 0.3s linear;
   
 }
+
+nav{
+  box-shadow:var(--light-shadow);
+  background:var(--clr-white);
+}
+
+.links{
+  list-style-type:none;
+}
+
+.links a{
+  text-decoration:none;
+  text-transform:capitalize;
+  padding-left:1rem;
+  color:var(--clr-grey-2);
+  letter-spacing:0.2rem;
+}
+
+li{
+  margin-bottom:2rem;
+}
+.links a:hover{
+  color:var(--clr-support-5);
+  transition:all 0.3s linear;
+  
+}
