@@ -64,6 +64,11 @@
   box-sizing:box-content;
 }
 
+body{
+  font-family:"Open Sans", sans-serif;
+  font-size:1.5rem;
+  background:var(--clr-white);
+}
 .logo{
   height:80px;
   width:80px;
@@ -83,10 +88,25 @@
 .toggle-btn{
   border:transparent;
   cursor:pointer;
-  font-size:2rem;
+  font-size:1.5rem;
   background:transparent;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .toggle-btn:hover{
   color:var(--clr-support-5);
+  transition:all 0.3s linear;
+  
 }
