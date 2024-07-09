@@ -69,6 +69,12 @@ body{
   font-size:1.5rem;
   background:var(--clr-white);
 }
+
+header{
+  background:url(./src/assets/pexels-timothy-huliselan-205951426-20784463.jpg) center/cover no-repeat;
+  min-height:100vh;
+}
+
 .logo{
   height:80px;
   width:80px;
@@ -114,6 +120,7 @@ body{
 nav{
   box-shadow:var(--light-shadow);
   background:var(--clr-white);
+ 
 }
 
 .links{
