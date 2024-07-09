@@ -59,3 +59,14 @@
   align-items:center;
   padding:1rem;
 }
+
+.logo{
+  cursor:pointer;
+}
+
+.toggle-btn{
+  border:transparent;
+  cursor:pointer;
+  font-size:2rem;
+  background:transparent;
+}
