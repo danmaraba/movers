@@ -179,6 +179,16 @@ li{
   margin-top:1rem;
 }
 
+.services{
+  min-height:50vh;
+  background:var(--clr-white);
+}
+
+.contacts{
+  min-height:50vh;
+  background:var(--clr-support-9);
+}
+
 @media screen and (min-width:801px){
   .nav-center{
     max-width:1170px;
@@ -206,5 +216,16 @@ li{
 
   .links-container{
     height:auto !important;
+  }
+}
+
+@media screen and (max-width:800px){
+  header{
+    min-height:40vh;
+  }
+
+  .nav-header{
+    margin-left:4rem;
+    margin-right:4rem;
   }
 }
