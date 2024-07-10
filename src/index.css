@@ -201,7 +201,7 @@ li{
   /* gap:8rem; */
   justify-content:center;
   flex-wrap:wrap;
-  margin-top:0px;
+  /* margin-top:-10px; */
 }
 
 .card{
@@ -255,6 +255,21 @@ li{
   display:grid;
   place-items:center;
   width:100%;
+}
+
+.icon{
+  color:var(--clr-brand-9);
+  margin-right:16px;
+  cursor:pointer;
+}
+
+.contact-details p{
+text-transform:capitalize;
+margin-top:1rem;
+}
+
+.footer{
+  text-transform:capitalize;
 }
 
 @media screen and (min-width:801px){
