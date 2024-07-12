@@ -38,11 +38,21 @@ function Navbar() {
   }, [showLinks]);
   // console.log(links);
 
+  const navbar=document.getElementById('navbar')
+  const handleScroll = () => {
+      if(window.scrollY===0){
+        navbar.style.boxShadow='0 5px 15px rgba(0, 0, 0, 0.1)';
+      }else{
+        navbar.style.boxShadow='none'
+      }
+  };
+
+  window.addEventListener('scroll', handleScroll);
   
   return (
     <>
-      <header ref={home}>
-        <nav>
+      <header >
+        <nav id="navbar"ref={home}>
           <div className="nav-center">
             <div className="nav-header">
               <img
@@ -61,11 +71,6 @@ function Navbar() {
             </div>
             <div className="links-container" ref={linksContainerRef}>
               <ul className="links" ref={linkRef}>
-                {/* {links.map((link) => {
-                  const { id, url, text } = link;
-                  return ( */}
-                    {/* // <li key={id} onClick={()=>{ */}
-                   
                   <li onClick={()=>{
                     scrollToSection(home)
                   }}><Link to="/">Home</Link></li>
@@ -85,7 +90,7 @@ function Navbar() {
         </nav>
       </header>
       {/* about */}
-      <section className="about" >
+      <section className="about"ref={about} >
       <div className="abt">
         <img
           src="./src/assets/pexels-tima-miroshnichenko-6169668.jpg"
