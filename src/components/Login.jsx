@@ -1,5 +1,4 @@
 import React,{useState}from "react";
-
 function Login() {
    const[action, setAction]= useState("Login")
 
@@ -12,10 +11,10 @@ function Login() {
       <form action="" onSubmit={handleSubmit}>
         <div className="text">{action}</div>
         <div className="underline"></div>
-        <div className="input">
+        {action==='Login'?<div></div>:<div className="input">
           <label htmlFor="username">Username</label>
           <input type="text" />
-        </div>
+        </div>}
         <div className="input">
           <label htmlFor="email">Email</label>
           <input type="email" />
@@ -24,9 +23,9 @@ function Login() {
           <label htmlFor="password">Password</label>
           <input type="password" />
         </div>
-        <div className="forgot-password">
+        {action==='Sign Up'?<div></div>:<div className="forgot-password">
             Forgot Password? <span><a href="">Click Here</a></span>
-        </div>
+        </div>}
         <div className="login-btns">
         <button className={action==="Login"?"sign-up gray":"sign-up"} onClick={()=>{setAction('Sign Up')}}>Sign Up</button>
         <button className={action==="Sign Up"?"sign-up gray":"sign-up"}onClick={()=>{setAction('Login')}}>Login</button>
