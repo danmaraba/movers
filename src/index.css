@@ -328,6 +328,17 @@ textarea::placeholder{
   transform:scaleX(1);
 }
 
+.submitt-btn{
+  padding:4px 12px;
+  border-radius:4px;
+  background-color:var(--clr-brand-5);
+  border-style:none;
+  color:var(--clr-white);
+  font-size:20px;
+  margin:8px 16px;
+  cursor:pointer;
+}
+
 @media screen and (min-width: 801px) {
   .nav-center {
     max-width: 1170px;
