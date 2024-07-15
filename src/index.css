@@ -307,7 +307,7 @@ li a:hover {
   bottom:0;
   height:4px;
   width:20%;
-  background-color:red;
+  background-color:var(--clr-brand-5);
   transform-origin:bottom left;
   transform:scaleX(0);
   transition:transform 1s ease-in-out;
@@ -316,6 +316,8 @@ li a:hover {
 #myTextArea{
   width:400px;
   height:100px;
+  border-radius:4px;
+  border-color:var(--clr-brand-5);
 }
 
 textarea::placeholder{
