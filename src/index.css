@@ -262,6 +262,8 @@ li a:hover {
   border-radius:16px;
 }
 
+
+
 .icon {
   color: var(--clr-brand-9);
   margin-right: 16px;
@@ -281,10 +283,37 @@ li a:hover {
   /* display:none; */
 }
 
+
+
 .contacts-section{
   margin-top:12rem;
   margin-left:8rem;
 }
+
+.contacts-title{
+  text-align:center;
+}
+
+.image-contacts{
+  width:100%;
+  height:50vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:-25rem;
+  margin-left:10rem;
+
+}
+
+.image-contacts img{
+  max-width:100%;
+  max-height:100%;
+  display:block;
+  /* margin-top:-60rem;
+  margin-left:10rem; */
+  margin:auto;
+  border-radius:12px;
+  }
 
 .input-container{
   position:relative;
@@ -325,6 +354,10 @@ textarea::placeholder{
   padding:1.5rem;
 }
 
+textarea:focus{
+  outline:none;
+}
+
 .input-container input:focus + .underline{
   transform:scaleX(1);
 }
@@ -338,6 +371,19 @@ textarea::placeholder{
   font-size:20px;
   margin:8px 16px;
   cursor:pointer;
+}
+
+.contacts-footer-section{
+  min-height: 50vh;
+  max-width: 100%;
+  background: var(--clr-support-9);
+  display: grid;
+  place-items: center;
+  margin:2rem;
+  border-radius:16px;
+}
+body, html {
+  overflow-x: hidden;
 }
 
 @media screen and (min-width: 801px) {
