@@ -6,13 +6,32 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { NavLink } from "react-router-dom";
 function Contacts() {
+  const contacts=useRef(null)
+    const scrollToSection = (elementRef) => {
+        window.scrollTo({
+          top: elementRef.current.offsetTop,
+          behavior: "smooth",
+        });
+      };
+
+      const navbar=document.getElementById('contact')
+  const handleScroll = () => {
+      if(window.scrollY===0){
+        navbar.style.boxShadow='0 5px 15px rgba(0, 0, 0, 0.1)';
+      }else{
+        navbar.style.boxShadow='none';
+      }
+  };
+  window.addEventListener('scroll', handleScroll);
+  
   // const contacts=useRef(null)
   // get the current year
   const date = new Date().getFullYear();
   return (
     <>
-      <div className="contacts-section">
+      <div className="contacts-section" ref={contacts} id="contact">
         <h3 className="contacts-title">Get in Touch!</h3>
         <div className="input-container">
           <input type="text" id="input-value" placeholder="Name..." />
@@ -45,6 +64,17 @@ function Contacts() {
           We are here to facilitate safe and seamless delivery of your parcel!
         </p>
         <div className="contact-details-section">
+          <div className="contact-about">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="quick-links">
+            <h3>Quick Links</h3>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/services">Services</NavLink>
+            <NavLink to="/contacts">Contacts</NavLink>
+          </div>
           <p>
             <span>
               <FontAwesomeIcon icon={faLocationDot} className="icon" />
