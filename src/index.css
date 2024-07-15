@@ -386,6 +386,11 @@ body, html {
   overflow-x: hidden;
 }
 
+.contact-details-section{
+  display:flex;
+  gap:4rem;
+}
+
 @media screen and (min-width: 801px) {
   .nav-center {
     max-width: 1170px;
