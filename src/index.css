@@ -280,6 +280,52 @@ li a:hover {
   /* display:none; */
 }
 
+.contacts-section{
+  margin-top:12rem;
+  margin-left:8rem;
+}
+
+.input-container{
+  position:relative;
+  margin-bottom:2rem;
+}
+
+.input-container input{
+  width:300px;
+  padding:20px;
+  border:none;
+  font-size:20px;
+}
+
+.input-container input:focus{
+  outline:none;
+}
+
+.underline{
+  position:absolute;
+  left:0;
+  bottom:0;
+  height:4px;
+  width:20%;
+  background-color:red;
+  transform-origin:bottom left;
+  transform:scaleX(0);
+  transition:transform 1s ease-in-out;
+}
+
+#myTextArea{
+  width:400px;
+  height:100px;
+}
+
+textarea::placeholder{
+  padding:1.5rem;
+}
+
+.input-container input:focus + .underline{
+  transform:scaleX(1);
+}
+
 @media screen and (min-width: 801px) {
   .nav-center {
     max-width: 1170px;
