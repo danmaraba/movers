@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from "react";
 
 function Register() {
-  return (
-    <div>
-      
-    </div>
-  )
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const[firstName,setFirstName]=useState("")
+  const[secondName,setSecondName]=useState("")
+  return <div></div>;
 }
 
-export default Register
+export default Register;
