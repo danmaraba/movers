@@ -39,6 +39,13 @@ function Login() {
         <label>Password</label>
         <input type="password" className="form-control" placeholder="Enter password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
       </div>
+
+      <div className="login-submit-button">
+        <button type="submit">Submit</button>
+      </div>
+      <p className="forgot-password">
+        New user? <a href="">Register Here</a>
+      </p>
     </form>
     
     // <div className="container">
