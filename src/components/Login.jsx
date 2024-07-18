@@ -1,22 +1,25 @@
-import React,{useState}from "react";
-import { useAuth } from "../contexts/authContext";
-import { doSignInWithEmailAndPassword} from "../firebase/auth";
-import { Navigate } from "react-router-dom";
+import React, { useState } from "react";
+// import { useAuth } from "../contexts/authContext";
+// import { Navigate } from "react-router-dom";
 import SignInWithGoogle from "./SignInWithGoogle";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebase/firebase";
 function Login() {
-   const[action, setAction]= useState("Login")
-   const[email,setEmail]=useState('')
-   const[password,setPassword]=useState('')
-   const[isSigningIn, setIsSigningIn]=useState(false);
+  //  const[action, setAction]= useState("Login")
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  //  const[isSigningIn, setIsSigningIn]=useState(false);
   //  const[errorMessage,setErrorMessage]=useState('')
-   const{userLoggedIn}=useAuth()
+  //  const{userLoggedIn}=useAuth()
 
    const handleSubmit=async (e)=>{
     e.preventDefault()
-    if(!isSigningIn){
-      setIsSigningIn(true)
-     await doSignInWithEmailAndPassword(email,password)
+    try {
+     await signInWithEmailAndPassword(auth,password,email)
+    } catch (error) {
+      
     }
+  
    }
 
   //  const onGoogleSignIn=(e)=>{
@@ -29,27 +32,36 @@ function Login() {
   //   }
   //  }
   return (
-    <form>
-      <h3>Login</h3>
-      <div className="login-email">
-        <label >Email address</label>
-        <input type="email" className="form-control" placeholder="Enter email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-      </div>
+    <form className="form-container" onSubmit={handleSubmit}>
+      <h3 className="text">Login</h3>
+      <div className="input-container">
+        <div className="input">
+          <label>Email Address</label>
+          <input
+            type="email"
+            placeholder="Enter email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
 
-      <div className="login-password">
-        <label>Password</label>
-        <input type="password" className="form-control" placeholder="Enter password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
+        <div className="input">
+          <label>Password </label>
+          <input
+            type="password"
+            placeholder="Enter password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+          <button type="submit" className="submit-btn">Submit</button>
+          <p className="forgot-password">
+            New user? <a href="/register">Register Here</a>
+          </p>
+          <SignInWithGoogle />
       </div>
-
-      <div className="login-submit-button">
-        <button type="submit">Submit</button>
-      </div>
-      <p className="forgot-password">
-        New user? <a href="">Register Here</a>
-      </p>
-      <SignInWithGoogle/>
     </form>
-    
+
     // <div className="container">
     //   {userLoggedIn && (<Navigate to={'/home'} replace={true}/>)}
     //   <form action="" onSubmit={handleSubmit}>
