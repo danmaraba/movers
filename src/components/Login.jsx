@@ -2,6 +2,7 @@ import React,{useState}from "react";
 import { useAuth } from "../contexts/authContext";
 import { doSignInWithEmailAndPassword} from "../firebase/auth";
 import { Navigate } from "react-router-dom";
+import SignInWithGoogle from "./SignInWithGoogle";
 function Login() {
    const[action, setAction]= useState("Login")
    const[email,setEmail]=useState('')
@@ -28,7 +29,7 @@ function Login() {
   //   }
   //  }
   return (
-    <form action="">
+    <form>
       <h3>Login</h3>
       <div className="login-email">
         <label >Email address</label>
@@ -46,6 +47,7 @@ function Login() {
       <p className="forgot-password">
         New user? <a href="">Register Here</a>
       </p>
+      <SignInWithGoogle/>
     </form>
     
     // <div className="container">
