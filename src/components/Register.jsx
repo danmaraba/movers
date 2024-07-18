@@ -1,3 +1,4 @@
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 
 function Register() {
@@ -6,8 +7,13 @@ function Register() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
 
-  const handleRegister=(e)=>{
+  const handleRegister=async(e)=>{
     e.preventDefault()
+    try {
+       await createUserWithEmailAndPassword(auth,email,password)
+    } catch (error) {
+        
+    }
   }
   return (
     <form className="form-container" onSubmit={handleRegister}>
