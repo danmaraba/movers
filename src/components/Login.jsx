@@ -34,6 +34,11 @@ function Login() {
         <label >Email address</label>
         <input type="email" className="form-control" placeholder="Enter email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
       </div>
+
+      <div className="login-password">
+        <label>Password</label>
+        <input type="password" className="form-control" placeholder="Enter password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
+      </div>
     </form>
     
     // <div className="container">
