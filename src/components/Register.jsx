@@ -6,9 +6,9 @@ function Register() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   return (
-    <form>
-      <h3>Sign Up</h3>
-      <div className="login-email">
+    <form className="form-container">
+      <h3 className="text">Sign Up</h3>
+      <div className="input">
         <label>First Name</label>
         <input
           type="text"
@@ -19,7 +19,7 @@ function Register() {
         />
       </div>
 
-      <div className="login-password">
+      <div className="input">
         <label>Last Name</label>
         <input
           type="text"
@@ -30,7 +30,7 @@ function Register() {
         />
       </div>
 
-      <div className="login-email">
+      <div className="input">
         <label>Email address</label>
         <input
           type="email"
@@ -41,7 +41,7 @@ function Register() {
         />
       </div>
 
-      <div className="login-password">
+      <div className="input">
         <label>Password</label>
         <input
           type="password"
@@ -51,12 +51,9 @@ function Register() {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-
-      <div className="login-submit-button">
-        <button type="submit">Sign Up</button>
-      </div>
+        <button type="submit" className="submit-btn">Sign Up</button>
       <p className="forgot-password">
-        Already Registered? <a href="">Login</a>
+        Already Registered? <a href="/login">Login</a>
       </p>
     </form>
   );
