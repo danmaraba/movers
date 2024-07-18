@@ -63,17 +63,17 @@ function Navlinks() {
               <ul className="links" ref={linkRef}>
                   <li onClick={()=>{
                     scrollToSection(home)
-                  }}><NavLink to="/" exact>Home</NavLink></li>
+                  }}><NavLink to="/" >Home</NavLink></li>
                   <li onClick={()=>{
                     scrollToSection(about)
-                  }}><NavLink to="/about" exact>About</NavLink></li>
+                  }}><NavLink to="/about" >About</NavLink></li>
                   <li onClick={()=>{
                     scrollToSection(services)
-                  }}><NavLink to="/services" exact>Services</NavLink></li>
+                  }}><NavLink to="/services" >Services</NavLink></li>
                   <li onClick={()=>{
                     scrollToSection(contacts)
-                  }}><NavLink to="/contacts" exact>Contacts</NavLink></li>
-                  <li><NavLink to="/login" exact>Login</NavLink></li>
+                  }}><NavLink to="/contacts" >Contacts</NavLink></li>
+                  <li id="login-link"><NavLink to="/login">Login</NavLink></li>
               </ul>
             </div>
           </div>

@@ -8,7 +8,7 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import{Link} from 'react-router-dom'
+import{NavLink,Link} from 'react-router-dom'
 
 function Navbar() {
   const linkRef = useRef(null);
@@ -82,7 +82,7 @@ function Navbar() {
                   <li onClick={()=>{
                     scrollToSection(contacts)
                   }}><Link to="/contacts">Contacts</Link></li>
-                  <li><Link to="/login">Login</Link></li>
+                  <li id="login-link"><Link to="/login">Login</Link></li>
               </ul>
             </div>
           </div>
@@ -120,7 +120,7 @@ function Navbar() {
             <div className="card-content">
               <h4>parcel delivery</h4>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, magni?</p>
-              <a href="" className="btn">order delivery</a>
+              <NavLink to="/login" className="btn">order delivery</NavLink>
             </div>
           </div>
           <div className="card">
@@ -132,49 +132,77 @@ function Navbar() {
             <div className="card-content">
               <h4>car hire</h4>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, magni?</p>
-              <a href="" className="btn">hire a car</a>
+              <NavLink to="/login" className="btn">hire car</NavLink>
             </div>
           </div>
         </div>
       </section>
       
       {/* contacts */}
-      <section className="contacts" ref={contacts}>
-        <h1>Get in Touch with Us!</h1>
+      <section className="contacts-footer-section">
         <p>
           We are here to facilitate safe and seamless delivery of your parcel!
         </p>
-        <div className="contact-details">
-          <p>
+        <div className="contact-details-section">
+          <div className="contact-about">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="quick-links">
+            <h3>Quick Links</h3>
+            <div className="contact-links">
+              <ul>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
+                  <Link to="/services">Services</Link>
+                </li>
+                <li>
+                  <Link to="/contacts">Contacts</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="contact-contact">
+            <h3>Contacts</h3>
+            <p>
+              <span>
+                <FontAwesomeIcon icon={faLocationDot} className="icon" />
+                Sarit,Nairobi.
+              </span>
+            </p>
+            <p>
+              <span>
+                <FontAwesomeIcon icon={faPhone} className="icon" />
+              </span>
+              +2547XXXXXXXX
+            </p>
+            <p>
+              <span>
+                <FontAwesomeIcon icon={faEnvelope} className="icon" />
+                movers@gmail.com
+              </span>
+            </p>
+          </div>
+          <div className="contact-socials">
+            <h3>Let us Connect</h3>
             <span>
-              <FontAwesomeIcon icon={faLocationDot} className="icon"/>
-              Sarit,Nairobi.
+              <a href="#tiktok"></a>
+              <FontAwesomeIcon icon={faTiktok} className="icon" />
             </span>
-          </p>
-          <p>
             <span>
-              <FontAwesomeIcon icon={faPhone} className="icon"/>
+              <a href="#instagram"></a>
+              <FontAwesomeIcon icon={faInstagram} className="icon" />
             </span>
-            +2547111111111
-          </p>
-          <p>
-            <span>
-              <FontAwesomeIcon icon={faEnvelope} className="icon" />
-              movers@gmail.com
-            </span>
-          </p>
-          <span>
-            <a href="#tiktok"></a>
-            <FontAwesomeIcon icon={faTiktok}className="icon" />
-          </span>
-          <span>
-            <a href="#instagram"></a>
-            <FontAwesomeIcon icon={faInstagram} className="icon" />
-          </span>
-          <p className="footer">
-             &copy; <span>{date}</span> movers.all rights reserved
-          </p>
+          </div>
         </div>
+        <p className="footer">
+          &copy; <span>{date}</span> movers.all rights reserved
+        </p>
       </section>
     </>
   );

@@ -16,7 +16,7 @@ function Services() {
             <div className="card-content">
               <h4>parcel delivery</h4>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, magni?</p>
-              <a href="/login" className="btn">order delivery</a>
+              <NavLink to="/login" className="btn">order delivery</NavLink>
             </div>
           </div>
           <div className="card">
