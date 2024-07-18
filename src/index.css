@@ -471,6 +471,10 @@ html {
   outline:none;
 }
 
+.input label{
+  font-size:20px;
+}
+
 .submit-btn{
   border-radius:8px;
   padding:8px;
