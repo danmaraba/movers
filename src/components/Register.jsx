@@ -1,40 +1,49 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
-import { auth,db} from "../firebase/firebase";
-import { setDoc,doc } from "firebase/firestore";
+import { auth, db } from "../firebase/firebase";
+import { setDoc, doc } from "firebase/firestore";
 // import { toast } from "react-toastify";
-import { toast} from 'sonner'
+import { toast } from "sonner";
 
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [errors, setErrors] = useState("");
 
-  const handleRegister=async(e)=>{
-    e.preventDefault()
+  const handleRegister = async (e) => {
+    e.preventDefault();
     try {
-       await createUserWithEmailAndPassword(auth,email,password)
-       const user=auth.currentUser;
-       console.log(user);
-       if(user){
-        await setDoc(doc(db,"users",user.uid),{
-            email:user.email,
-            firstName:firstName,
-            lastName:lastName
-        })
-       }
-       console.log("User Registered Successfully!!");
-       toast.success("User Registered Successfully!!",{
-        position:"top-center"
-       })
+      await createUserWithEmailAndPassword(auth, email, password);
+      const user = auth.currentUser;
+      console.log(user);
+      if (firstName.length && lastName.length > 0) {
+        if (user) {
+          await setDoc(doc(db, "users", user.uid), {
+            email: user.email,
+            firstName: firstName,
+            lastName: lastName,
+          });
+        }
+        console.log("User Registered Successfully!!");
+        toast.success("User Registered Successfully!!", {
+          position: "top-center",
+        });
+      } else {
+        setErrors(
+          toast.error(["Name is Required!"], {
+            position: "top-center",
+          })
+        );
+      }
     } catch (error) {
-        console.log(error.message);
-        toast.error(error.message,{
-            position:"bottom-center",
-           })
+      console.log(error.message);
+      toast.error(error.message, {
+        position: "top-center",
+      });
     }
-  }
+  };
   return (
     <form className="form-container" onSubmit={handleRegister}>
       <h3 className="text">Sign Up</h3>
@@ -81,7 +90,9 @@ function Register() {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-        <button type="submit" className="submit-btn">Sign Up</button>
+      <button type="submit" className="submit-btn">
+        Sign Up
+      </button>
       <p className="forgot-password">
         Already Registered? <a href="/login">Login</a>
       </p>
