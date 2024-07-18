@@ -8,11 +8,29 @@ function Profile() {
     const fetchUserData=async()=>{
         auth.onAuthStateChanged(async(user)=>{
             console.log(user);
+            const docRef=doc(db,"users",user.uid)
+            const docSnap=await getDoc(docRef)
+            if(docSnap.exists()){
+                setUserDetails(docSnap.data())
+                console.log(docSnap.data);
+            }else{
+                console.log("user is not logged in");
+            }
         })
     }
     useEffect(()=>{
         fetchUserData()
     },[])
+
+    async function handleLogOut(){
+        try {
+            await auth.signOut()
+            window.location.href="/login"
+            console.log("User logged out successfully!");
+        } catch (error) {
+            console.log("Error logging out:",error.message);
+        }
+    }
   return (
     <div>
         {
@@ -24,7 +42,7 @@ function Profile() {
                     <p>firstName:{userDetails.firstName}</p>
                     <p>lastName:{userDetails.lastName}</p>
                 </div>
-                <button className="logout-btn">
+                <button className="logout-btn" onClick={handleLogOut}>
                     Logout
                 </button>
                 </>
