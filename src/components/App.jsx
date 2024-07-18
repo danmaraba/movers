@@ -11,8 +11,12 @@ import About from './About'
 import Register from './Register';
 // import Distance from './Distance';
 import { Toaster } from 'sonner';
+import Profile from './Profile';
 
-function App() {
+
+function App(){
+
+
 
   return (
     <div>
@@ -25,6 +29,7 @@ function App() {
         <Route path='/contacts' element={<Contacts/>}/> */}
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
+        <Route path='/profile' element={<Profile/>}/>
       </Routes>
       <Toaster richColors/>
     </div>
