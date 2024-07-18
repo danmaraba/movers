@@ -5,8 +5,12 @@ function Register() {
   const [password, setPassword] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+
+  const handleRegister=(e)=>{
+    e.preventDefault()
+  }
   return (
-    <form className="form-container">
+    <form className="form-container" onSubmit={handleRegister}>
       <h3 className="text">Sign Up</h3>
       <div className="input">
         <label>First Name</label>
