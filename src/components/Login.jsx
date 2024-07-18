@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import SignInWithGoogle from "./SignInWithGoogle";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/firebase";
+import { toast } from "sonner";
 function Login() {
   //  const[action, setAction]= useState("Login")
   const [email, setEmail] = useState("");
@@ -15,9 +16,16 @@ function Login() {
    const handleSubmit=async (e)=>{
     e.preventDefault()
     try {
-     await signInWithEmailAndPassword(auth,password,email)
+     await signInWithEmailAndPassword(auth,email,password)
+     console.log("User Logged in Successfully!");
+     toast.success("User Logged in Successfully!", {
+      position: "top-center",
+    });
+    window.location.href="/profile"
     } catch (error) {
-      
+      toast.error(error.message, {
+        position: "top-center",
+      });
     }
   
    }
