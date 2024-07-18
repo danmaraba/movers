@@ -467,6 +467,10 @@ html {
   width:300px;
 }
 
+.input input:focus{
+  outline:none;
+}
+
 .submit-btn{
   border-radius:8px;
   padding:8px;
