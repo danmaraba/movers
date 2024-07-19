@@ -552,6 +552,7 @@ background-color:#e3f2fd;
   max-width:900px;
   width:100%;
   background-color:red;
+  padding:50px 0;
 }
 
 .slide{
@@ -559,4 +560,8 @@ background-color:#e3f2fd;
   align-items:center;
   justify-content:center;
   flex-direction:column;
+}
+
+.slide p{
+  padding:0 160px;
 }
