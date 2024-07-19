@@ -24,6 +24,7 @@ function Register() {
             email: user.email,
             firstName: firstName,
             lastName: lastName,
+            photo:""
           });
         }
         console.log("User Registered Successfully!!");
