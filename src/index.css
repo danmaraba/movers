@@ -154,7 +154,7 @@ li a:hover {
 }
 
 .about {
-  min-height: 50vh;
+  min-height: 100vh;
   background: var(--clr-brand-9);
   width: 100%;
   display: grid;
@@ -444,9 +444,22 @@ html {
 
 .form-container{
   box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
-  margin:4rem 8rem;
+  margin-top:12rem;
   padding:2rem;
   width:400px;
+  margin-left:40rem;
+  
+}
+
+.profile-div{
+  margin-top:18rem;
+  /* margin-left:40rem; */
+  display:grid;
+  place-items:center;
+}
+
+.logout-btn{
+
 }
 
 .text{
