@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css'
 import { Routes,Route} from 'react-router-dom';
-// import Navbar from './Home'
+import Navbar from './Home'
 import Home from './Home';
 import Login from './Login'
 import About from './About'
@@ -12,6 +12,7 @@ import Register from './Register';
 // import Distance from './Distance';
 import { Toaster } from 'sonner';
 import Profile from './Profile';
+import Testimonials from './Testimonials';
 
 
 function App(){
@@ -20,9 +21,10 @@ function App(){
 
   return (
     <div>
+      {/* <Testimonials/> */}
       {/* <Distance/> */}
-      <Navlinks/>
-      <Routes>
+      <Navlinks/> */
+      /* <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/services' element={<Services/>}/>
@@ -30,8 +32,9 @@ function App(){
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/profile' element={<Profile/>}/>
+         {/* <Route path='/testimonials' element={Testimonials}/>  */}
       </Routes>
-      <Toaster richColors/>
+    <Toaster richColors/> 
     </div>
   )
 }
