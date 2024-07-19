@@ -539,3 +539,24 @@ html {
   margin-top:16px;
   cursor:pointer;
 }
+.container{
+height:100vh;
+justify-content:center;
+align-items:center;
+display:flex;
+background-color:#e3f2fd;
+}
+
+.testimonials{
+  position:relative;
+  max-width:900px;
+  width:100%;
+  background-color:red;
+}
+
+.slide{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
