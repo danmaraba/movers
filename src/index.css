@@ -553,6 +553,7 @@ background-color:#e3f2fd;
   width:100%;
   /* background-color:#fff; */
   padding:50px 0;
+  overflow:hidden;
 }
 
 .testimonials h1{
@@ -587,7 +588,7 @@ background-color:#e3f2fd;
   font-size:12px;
   font-weight:400;
   color:#333;
-  margin-top:-4rem;
+  /* margin-top:-4rem; */
 
 }
 
@@ -603,3 +604,8 @@ background-color:#e3f2fd;
   text-align:center;
   align-items:center;
 }
+
+/* .mySwiper{
+  height:40px;
+  width:40px;
+} */
