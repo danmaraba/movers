@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import{NavLink,Link} from 'react-router-dom'
+import Testimonials from "./Testimonials";
 
 function Navbar() {
   const linkRef = useRef(null);
@@ -137,7 +138,7 @@ function Navbar() {
           </div>
         </div>
       </section>
-      
+      <Testimonials/>
       {/* contacts */}
       <section className="contacts-footer-section">
         <p>
