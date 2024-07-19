@@ -459,7 +459,15 @@ html {
 }
 
 .logout-btn{
-
+  border-radius:8px;
+  padding:8px;
+  margin-top:16px;
+  color:var(--clr-white);
+  background:var(--clr-brand-5);
+  border:transparent;
+  cursor:pointer;
+  font-size:24px;
+  width:316px;
 }
 
 .text{
