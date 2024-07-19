@@ -5,7 +5,7 @@ import {
     faQuoteLeft
 } from "@fortawesome/free-solid-svg-icons";
 function Testimonials() {
-  const userDetails = reviews.map((review) => (
+  const userInfo = reviews.map((review) => (
     <div key={review.id}>
       <img
         src={review.img}
@@ -18,14 +18,15 @@ function Testimonials() {
       />
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas similique consequatur quia perferendis provident, sit non dolorum corrupti fugit a.</p>
       <FontAwesomeIcon icon={faQuoteLeft} />
-      <h4>{review.name}</h4>
+      <h4><span className="name">{review.name}</span></h4>
+      <h4><span className="job">{review.job}</span></h4>
     </div>
   ));
   return (
     <section className="container">
       <div className="testimonials">
         <h1>Testimonials</h1>
-        {userDetails}
+        {userInfo}
       </div>
     </section>
   );
