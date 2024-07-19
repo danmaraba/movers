@@ -458,6 +458,19 @@ html {
   place-items:center;
 }
 
+.profile-div h3{
+  margin:8px;
+  text-align:center;
+}
+
+.profile-details p{
+  margin:8px;
+}
+
+#userdetails{
+  color:var(--clr-support-8)
+}
+
 .logout-btn{
   border-radius:8px;
   padding:8px;
