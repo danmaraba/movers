@@ -1,9 +1,11 @@
 import React,{useRef} from 'react';
 import { NavLink } from 'react-router-dom';
+import Testimonials from './Testimonials';
 
 function Services() {
     const services=useRef(null)
   return (
+    <>
     <section className="services" ref={services}>
         <h1>Our Services</h1>
         <div className="card-container">
@@ -33,6 +35,9 @@ function Services() {
           </div>
         </div>
       </section>
+      <Testimonials/>
+    </>
+    
   )
 }
 

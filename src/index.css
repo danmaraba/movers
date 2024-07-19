@@ -154,7 +154,7 @@ li a:hover {
 }
 
 .about {
-  min-height: 50vh;
+  min-height: 100vh;
   background: var(--clr-brand-9);
   width: 100%;
   display: grid;
@@ -444,9 +444,43 @@ html {
 
 .form-container{
   box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
-  margin:4rem 8rem;
+  margin-top:12rem;
   padding:2rem;
   width:400px;
+  margin-left:40rem;
+  
+}
+
+.profile-div{
+  margin-top:18rem;
+  /* margin-left:40rem; */
+  display:grid;
+  place-items:center;
+}
+
+.profile-div h3{
+  margin:8px;
+  text-align:center;
+}
+
+.profile-details p{
+  margin:8px;
+}
+
+#userdetails{
+  color:var(--clr-support-8)
+}
+
+.logout-btn{
+  border-radius:8px;
+  padding:8px;
+  margin-top:16px;
+  color:var(--clr-white);
+  background:var(--clr-brand-5);
+  border:transparent;
+  cursor:pointer;
+  font-size:24px;
+  width:316px;
 }
 
 .text{
@@ -492,3 +526,86 @@ html {
   font-size:16px;
   text-align:center;
 }
+
+.google-p{
+  font-size:16px;
+  margin-left:20px;
+  margin-top:16px;
+}
+
+.google-photo{
+  width:316px;
+  height:70px;
+  margin-top:16px;
+  cursor:pointer;
+}
+.container{
+height:100vh;
+justify-content:center;
+align-items:center;
+display:flex;
+background-color:#e3f2fd;
+}
+
+.testimonials{
+  position:relative;
+  max-width:900px;
+  width:100%;
+  /* background-color:#fff; */
+  padding:50px 0;
+  overflow:hidden;
+}
+
+.testimonials h1{
+  text-align:center;
+  margin-bottom:3rem;
+}
+
+.slide{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  row-gap:30px;
+}
+
+.slide p{
+  padding:0 160px;
+  text-align:center;
+  font-size:14px;
+  font-weight:500;
+  color:#333;
+}
+
+.name{
+  font-size:14px;
+  font-weight:600;
+  color:#333;
+
+}
+
+.job{
+  font-size:12px;
+  font-weight:400;
+  color:#333;
+  /* margin-top:-4rem; */
+
+}
+
+.quote{
+  font-size:30px;
+  color:var(--clr-brand-5)
+}
+
+.name-jobs{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:3rem;
+  text-align:center;
+  align-items:center;
+}
+
+/* .mySwiper{
+  height:40px;
+  width:40px;
+} */

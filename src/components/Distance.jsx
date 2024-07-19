@@ -33,7 +33,7 @@
 //         </button>
 //         <label>Distance:</label>
 //         <label>Duration:</label>
-//       <APIProvider apiKey={'AIzaSyDzJp_K30dB2VQelCM0VtpVms42cM6uRac'}>
+//       <APIProvider apiKey={}>
 //         <Map
 //          style={{width: '100%', height: '100vh'}}
 //          center={position}
