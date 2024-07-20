@@ -7,6 +7,8 @@ import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 // import Testimonials from './Testimonials';
 
 function Services() {
+   // get the current year
+ const date=new Date().getFullYear()
     const services=useRef(null)
   return (
     <>
