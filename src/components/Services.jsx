@@ -1,9 +1,24 @@
 import React,{useRef} from 'react';
 import { NavLink } from 'react-router-dom';
-import Testimonials from './Testimonials';
+import{Link} from 'react-router-dom'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone,faLocationDot,faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
+// import Testimonials from './Testimonials';
 
 function Services() {
+   // get the current year
+ const date=new Date().getFullYear()
     const services=useRef(null)
+    const contacts = useRef(null);
+    const scrollToSection = (elementRef) => {
+      window.scrollTo({
+        top: elementRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    };
+
+    
   return (
     <>
     <section className="services" ref={services}>
@@ -35,7 +50,75 @@ function Services() {
           </div>
         </div>
       </section>
-      <Testimonials/>
+      <section className="contacts-footer-section">
+      <div className="contacts-container">
+      <p className="heading">
+          We are here to facilitate safe and seamless delivery of your parcel!
+        </p>
+        <div className="contact-details-section">
+          <div className="contact-about">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="quick-links">
+            <h3>Quick Links</h3>
+            <div className="contact-links">
+              <ul>
+                <li>
+                  <Link to="/" style={{textDecoration:"none",transition:"0.3s linear"}} >Home</Link>
+                </li>
+                <li>
+                  <Link to="/about" style={{textDecoration:"none"}}>About</Link>
+                </li>
+                <li>
+                <Link style={{textDecoration:"none",transition:"0.3s linear"}} onClick={() => {
+                    scrollToSection(services);
+                  }}>Services</Link>
+                </li>
+                <li>
+                <Link to="/contacts" style={{textDecoration:"none",transition:"0.3s linear"}} >Contacts</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="contact-contact">
+            <h3>Contacts</h3>
+            <p>
+              <span>
+                <FontAwesomeIcon icon={faLocationDot} className="icon" />
+                Sarit,Nairobi.
+              </span>
+            </p>
+            <p style={{marginBottom:"2rem",marginTop:"2rem"}}>
+              <span>
+                <FontAwesomeIcon icon={faPhone} className="icon" />
+              </span>
+              +2547XXXXXXXX
+            </p>
+            <p>
+              <span>
+                <FontAwesomeIcon icon={faEnvelope} className="icon" />
+                movers@gmail.com
+              </span>
+            </p>
+          </div>
+          <div className="contact-socials">
+            <h3>Let us Connect</h3>
+            <span>
+              <a href="#tiktok"></a>
+              <FontAwesomeIcon icon={faTiktok} className="icon" />
+            </span>
+            <span>
+              <a href="#instagram"></a>
+              <FontAwesomeIcon icon={faInstagram} className="icon" />
+            </span>
+          </div>
+        </div>
+        <p className="footer">
+          &copy; <span>{date}</span> movers.all rights reserved
+        </p>
+      </div>
+      </section>
     </>
     
   )

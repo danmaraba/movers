@@ -54,7 +54,8 @@ function Contacts() {
         />
       </div>
       <section className="contacts-footer-section">
-        <p>
+      <div className="contacts-container">
+      <p className="heading">
           We are here to facilitate safe and seamless delivery of your parcel!
         </p>
         <div className="contact-details-section">
@@ -67,16 +68,16 @@ function Contacts() {
             <div className="contact-links">
               <ul>
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/" style={{textDecoration:"none"}}>Home</Link>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="/about" style={{textDecoration:"none"}}>About</Link>
                 </li>
                 <li>
-                  <Link to="/services">Services</Link>
+                  <Link to="/services" style={{textDecoration:"none"}}>Services</Link>
                 </li>
                 <li>
-                  <Link to="/contacts">Contacts</Link>
+                  <Link to="/contacts" style={{textDecoration:"none"}}>Contacts</Link>
                 </li>
               </ul>
             </div>
@@ -89,7 +90,7 @@ function Contacts() {
                 Sarit,Nairobi.
               </span>
             </p>
-            <p>
+            <p style={{marginBottom:"2rem",marginTop:"2rem"}}>
               <span>
                 <FontAwesomeIcon icon={faPhone} className="icon" />
               </span>
@@ -117,6 +118,7 @@ function Contacts() {
         <p className="footer">
           &copy; <span>{date}</span> movers.all rights reserved
         </p>
+      </div>
       </section>
     </>
   );
