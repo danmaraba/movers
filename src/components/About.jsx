@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone,faLocationDot,faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 function About() {
+  // get the current year
+ const date=new Date().getFullYear()
   const about = useRef(null);
   return (
     <>
