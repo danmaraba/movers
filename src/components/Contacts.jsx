@@ -54,7 +54,8 @@ function Contacts() {
         />
       </div>
       <section className="contacts-footer-section">
-        <p className="heading">
+      <div className="contacts-container">
+      <p className="heading">
           We are here to facilitate safe and seamless delivery of your parcel!
         </p>
         <div className="contact-details-section">
@@ -117,6 +118,7 @@ function Contacts() {
         <p className="footer">
           &copy; <span>{date}</span> movers.all rights reserved
         </p>
+      </div>
       </section>
     </>
   );
