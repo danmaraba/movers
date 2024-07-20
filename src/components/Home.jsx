@@ -205,7 +205,7 @@ function Navbar() {
                 Sarit,Nairobi.
               </span>
             </p>
-            <p>
+            <p style={{marginBottom:"2rem",marginTop:"2rem"}}>
               <span>
                 <FontAwesomeIcon icon={faPhone} className="icon" />
               </span>
