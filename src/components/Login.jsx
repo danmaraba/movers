@@ -40,7 +40,8 @@ function Login() {
   //   }
   //  }
   return (
-    <form className="form-container" onSubmit={handleSubmit}>
+    <div className="form-form-container">
+      <form className="form-container" onSubmit={handleSubmit}>
       <h3 className="text">Login</h3>
       <div className="input-container">
         <div className="input">
@@ -69,6 +70,8 @@ function Login() {
           <SignInWithGoogle />
       </div>
     </form>
+    </div>
+    
 
     // <div className="container">
     //   {userLoggedIn && (<Navigate to={'/home'} replace={true}/>)}
