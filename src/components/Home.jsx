@@ -71,32 +71,16 @@ function Navbar() {
             </div>
             <div className="links-container" ref={linksContainerRef}>
               <ul className="links" ref={linkRef}>
-                <li
-                  onClick={() => {
-                    scrollToSection(home);
-                  }}
-                >
+                <li>
                   <Link to="/">Home</Link>
                 </li>
-                <li
-                  onClick={() => {
-                    scrollToSection(about);
-                  }}
-                >
+                <li>
                   <Link to="/about">About</Link>
                 </li>
-                <li
-                  onClick={() => {
-                    scrollToSection(services);
-                  }}
-                >
+                <li>
                   <Link to="/services">Services</Link>
                 </li>
-                <li
-                  onClick={() => {
-                    scrollToSection(contacts);
-                  }}
-                >
+                <li>
                   <Link to="/contacts">Contacts</Link>
                 </li>
                 <li id="login-link">
@@ -183,16 +167,24 @@ function Navbar() {
             <div className="contact-links">
               <ul>
                 <li>
-                  <Link to="/" style={{textDecoration:"none"}}>Home</Link>
+                  <Link style={{textDecoration:"none",transition:"0.3s linear"}} onClick={() => {
+                    scrollToSection(home);
+                  }}>Home</Link>
                 </li>
                 <li>
-                  <Link to="/about" style={{textDecoration:"none"}}>About</Link>
+                  <Link style={{textDecoration:"none",transition:"0.3s linear"}} onClick={() => {
+                    scrollToSection(about);
+                  }}>About</Link>
                 </li>
                 <li>
-                  <Link to="/services" style={{textDecoration:"none"}}>Services</Link>
+                  <Link style={{textDecoration:"none",transition:"0.3s linear"}} onClick={() => {
+                    scrollToSection(services);
+                  }}>Services</Link>
                 </li>
                 <li>
-                  <Link to="/contacts" style={{textDecoration:"none"}}>Contacts</Link>
+                  <Link style={{textDecoration:"none",transition:"0.3s linear"}}  onClick={() => {
+                    scrollToSection(contacts);
+                  }}>Contacts</Link>
                 </li>
               </ul>
             </div>
