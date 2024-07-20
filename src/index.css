@@ -69,6 +69,11 @@ body {
   background: var(--clr-white);
 }
 
+img{
+  display:block;
+  width:auto;
+}
+
 header {
   background: url(./src/assets/rodrigo-abreu-lq9PxpwDZUk-unsplash.jpg)
     center/cover no-repeat;
@@ -192,7 +197,7 @@ li a:hover {
   background: var(--clr-white);
   display: grid;
   place-items: center;
-  width: 100%;
+  width: auto;
 }
 
 .services h1 {
@@ -435,7 +440,7 @@ html {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   /* header{
     min-height:40vh;
   }
@@ -445,18 +450,37 @@ html {
     margin-right:4rem;
   } */
 
-  .contacts {
+  /* .contacts {
     max-width: 100%;
     width: 100%;
+  } */
+  /* .form-form-container{
+    margin-left:-35rem;
+    width:150px;
+    padding-left:2rem;
+    padding-right:4rem;
   }
-}
+
+  .form-container{
+    /* padding:2rem; */
+  } */
+
+  .input-container{
+    padding-left:-12rem;
+  }
+
+
+  .form-form-container{
+    /* width:auto; */
+  }
 
 .form-container{
-  box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow:0 5px 15px rgba(0, 0, 0, 0.1); */
   margin-top:12rem;
-  padding:2rem;
+  padding:1rem 2rem;
   width:400px;
-  margin-left:40rem;
+  /* margin-left:40rem; */
+  margin-inline:2rem;
   
 }
 
