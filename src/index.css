@@ -605,7 +605,7 @@ background-color:#e3f2fd;
   align-items:center;
 }
 
-/* .mySwiper{
-  height:40px;
-  width:40px;
-} */
+.contacts-footer-section .heading{
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
