@@ -10,6 +10,15 @@ function Services() {
    // get the current year
  const date=new Date().getFullYear()
     const services=useRef(null)
+    const contacts = useRef(null);
+    const scrollToSection = (elementRef) => {
+      window.scrollTo({
+        top: elementRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    };
+
+    
   return (
     <>
     <section className="services" ref={services}>
@@ -56,16 +65,18 @@ function Services() {
             <div className="contact-links">
               <ul>
                 <li>
-                  <Link to="/" style={{textDecoration:"none"}}>Home</Link>
+                  <Link to="/" style={{textDecoration:"none",transition:"0.3s linear"}} >Home</Link>
                 </li>
                 <li>
                   <Link to="/about" style={{textDecoration:"none"}}>About</Link>
                 </li>
                 <li>
-                  <Link to="/services" style={{textDecoration:"none"}}>Services</Link>
+                <Link style={{textDecoration:"none",transition:"0.3s linear"}} onClick={() => {
+                    scrollToSection(services);
+                  }}>Services</Link>
                 </li>
                 <li>
-                  <Link to="/contacts" style={{textDecoration:"none"}}>Contacts</Link>
+                <Link to="/contacts" style={{textDecoration:"none",transition:"0.3s linear"}} >Contacts</Link>
                 </li>
               </ul>
             </div>
