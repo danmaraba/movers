@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import{Link} from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone,faLocationDot,faEnvelope} from "@fortawesome/free-solid-svg-icons";
-// import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 function About() {
   const about = useRef(null);
   return (
