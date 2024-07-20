@@ -200,6 +200,7 @@ li a:hover {
   text-underline-offset: 8px;
   text-decoration-color: var(--clr-support-5);
   text-decoration-thickness: 4px;
+  margin-top:4rem;
 }
 
 .card-container {
@@ -285,6 +286,7 @@ li a:hover {
   margin-top: 12rem;
   margin-left: 8rem;
 }
+
 
 .contacts-title {
   text-align: center;
@@ -372,8 +374,7 @@ textarea:focus {
   min-height: 50vh;
   max-width: 100%;
   background: var(--clr-support-9);
-  display: grid;
-  place-items: center;
+ 
   margin: 2rem;
   border-radius: 16px;
 }
@@ -382,13 +383,21 @@ html {
   overflow-x: hidden;
 }
 
+
 .contact-links {
   display: flex;
   flex-direction: column;
 }
 
-.contact-links ul {
+.contact-links ul{
   list-style-type: none;
+  
+}
+
+.contacts-container{
+  margin-bottom:2rem;
+   display: grid;
+  place-items: center;
 }
 
 .contact-details-section {
@@ -609,3 +618,7 @@ background-color:#e3f2fd;
   margin-top:2rem;
   margin-bottom:2rem;
 }
+
+/* .quick-links .contact-links li{
+  text-decoration:none;
+} */
