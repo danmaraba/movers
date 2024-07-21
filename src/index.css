@@ -624,6 +624,11 @@ html {
   align-items:center;
 }
 
+.text{
+  text-align:center;
+  margin-top:0;
+}
+
 .profile-div{
   margin-top:18rem;
   /* margin-left:40rem; */
