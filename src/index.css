@@ -335,7 +335,11 @@ li a:hover {
 
 .input-container {
   /* position: relative; */
-  margin-bottom: 2rem;
+  margin-top: 20px;
+}
+
+.input-container .input{
+  margin-bottom:15px;
 }
 
 .input-container input,
@@ -669,6 +673,7 @@ html {
   display:flex;
   flex-direction:column;
   margin-top:16px;
+
 }
 
 .input input{
