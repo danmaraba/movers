@@ -487,6 +487,13 @@ html {
     /* .contacts-footer-section{
       grid-template-columns:300px 1fr;
     } */
+    .swiper-slide {
+      flex-direction: column; /* Stack slides vertically on smaller screens */
+    }
+  
+    .slide {
+      max-width: 100%; /* Full width on smaller screens */
+    }
 
    
   }
@@ -607,27 +614,45 @@ background-color:#e3f2fd;
 .testimonials{
   position:relative;
   max-width:900px;
-  width:100%;
+  /* max-width:100%; */
   /* background-color:#fff; */
-  padding:50px 0;
+  /* padding:50px 0; */
   overflow:hidden;
+}
+
+.mySwiper{
+  max-width:100%;
+  padding-bottom:20px;
 }
 
 .testimonials h1{
   text-align:center;
   margin-bottom:3rem;
+  margin-top:0;
 }
 
-.slide{
+.swiper-slide{
   display:flex;
   align-items:center;
   justify-content:center;
-  flex-direction:column;
-  row-gap:30px;
+  text-align:center;
+  /* background:red; */
+}
+
+.slide{
+  max-width:400px;
+  padding:20px;
+  margin:0 auto;
+  border-radius:8px;
+}
+
+.slide img{
+ display:block;
+ margin:0 auto;
 }
 
 .slide p{
-  padding:0 160px;
+  padding:0 40px;
   text-align:center;
   font-size:14px;
   font-weight:500;
