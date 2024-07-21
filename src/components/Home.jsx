@@ -40,14 +40,12 @@ function Navbar() {
   }, [showLinks]);
   // console.log(links);
 
-  const closeMenu=()=>{
-    setShowLinks(false)
-  }
+ 
 
   // const navbar = document.getElementById("navbar");
-  const navbar=navbarRef.current
+  const navbar = navbarRef.current;
   const handleScroll = () => {
-    if(navbar){
+    if (navbar) {
       if (window.scrollY === 0) {
         navbar.style.boxShadow = "0 5px 15px rgba(0, 0, 0, 0.1)";
       } else {
@@ -56,9 +54,9 @@ function Navbar() {
     }
   };
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -67,7 +65,7 @@ function Navbar() {
   return (
     <>
       <header>
-        <nav id="navbar" >
+        <nav id="navbar">
           <div className="nav-center">
             <div className="nav-header">
               <img
@@ -85,20 +83,20 @@ function Navbar() {
               </button>
             </div>
             <div className="links-container" ref={linksContainerRef}>
-              <ul className="links" ref={linkRef} >
-                <li onClick={closeMenu} >
+              <ul className="links" ref={linkRef}>
+                <li>
                   <Link to="/">Home</Link>
                 </li>
-                <li onClick={closeMenu}>
+                <li>
                   <Link to="/about">About</Link>
                 </li>
-                <li onClick={closeMenu}>
+                <li>
                   <Link to="/services">Services</Link>
                 </li>
-                <li onClick={closeMenu}>
+                <li>
                   <Link to="/contacts">Contacts</Link>
                 </li>
-                <li id="login-link" onClick={closeMenu}>
+                <li id="login-link">
                   <Link to="/login">Login</Link>
                 </li>
               </ul>
