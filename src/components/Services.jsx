@@ -28,7 +28,6 @@ function Services() {
             <img
               src="./src/assets/pexels-tima-miroshnichenko-6169869.jpg"
               alt="img"
-              className="card-img"
             />
             <div className="card-content">
               <h4>parcel delivery</h4>
@@ -40,7 +39,6 @@ function Services() {
             <img
               src="./src/assets/pexels-negativespace-97079.jpg"
               alt="car hire"
-              className="card-img"
             />
             <div className="card-content">
               <h4>car hire</h4>

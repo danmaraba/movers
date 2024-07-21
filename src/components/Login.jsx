@@ -45,7 +45,7 @@ function Login() {
       <h3 className="text">Login</h3>
       <div className="input-container">
         <div className="input">
-          <label>Email Address</label>
+          < label>Email Address</label>
           <input
             type="email"
             placeholder="Enter email"
