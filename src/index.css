@@ -389,6 +389,12 @@ textarea:focus {
   cursor: pointer;
 }
 
+.contacts-section-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
 .contacts-footer-section {
   min-height: 50vh;
   max-width: 100%;
