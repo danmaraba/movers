@@ -337,8 +337,14 @@ li a:hover {
 }
 
 .input-container {
-  position: relative;
+  /* position: relative; */
   margin-bottom: 2rem;
+}
+
+.input-container input,
+.message-container textarea{
+  width:100%;
+  padding:10px;
 }
 
 .input-container input {
