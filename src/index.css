@@ -490,14 +490,11 @@ html {
   }
 
 
-  @media screen and (min-width: 800px){
-    .about{
-      /* grid-template-columns:1fr 1fr; */
+  @media screen and (min-width: 768px){
+    .abt{
+      grid-template-columns:repeat(2,1fr);
     }
-    .abt {
-         grid-template-columns:1fr 1fr;
-         gap:2rem;
-    }
+    
   }
 .form-container{
   /* box-shadow:0 5px 15px rgba(0, 0, 0, 0.1); */
