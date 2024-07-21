@@ -611,10 +611,17 @@ html {
   /* box-shadow:0 5px 15px rgba(0, 0, 0, 0.1); */
   margin-top:12rem;
   padding:1rem 2rem;
-  width:400px;
+  width:100%;
+  max-width:400px;
   /* margin-left:40rem; */
   margin-inline:2rem;
   
+}
+
+.form-form-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .profile-div{
@@ -789,11 +796,4 @@ background-color:#e3f2fd;
   align-items:center;
 }
 
-/* .contacts-footer-section .heading{
-  margin-top:2rem;
-  margin-bottom:2rem;
-} */
 
-/* .quick-links .contact-links li{
-  text-decoration:none;
-} */
