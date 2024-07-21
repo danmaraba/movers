@@ -23,7 +23,7 @@ function Testimonials() {
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide>
+          <SwiperSlide className="swiper-slide">
             <div className="slide">
               <img
                 src="./src/assets/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
@@ -32,6 +32,8 @@ function Testimonials() {
                   height: "170px",
                   objectFit: "cover",
                   borderRadius: "50%",
+                  marginBottom:"20px",
+                  
                 }}
               />
               <p>
@@ -50,7 +52,7 @@ function Testimonials() {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="swiper-slide">
             <div className="slide">
               <img
                 src="./src/assets/pexels-gabby-k-5876695.jpg"
@@ -59,6 +61,8 @@ function Testimonials() {
                   height: "170px",
                   objectFit: "cover",
                   borderRadius: "50%",
+                  marginBottom:"20px",
+                  
                 }}
               />
               <p>
@@ -77,7 +81,7 @@ function Testimonials() {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="swiper-slide">
             <div className="slide">
               <img
                 src="./src/assets/pexels-justin-shaifer-501272-1222271.jpg"
@@ -86,6 +90,8 @@ function Testimonials() {
                   height: "170px",
                   objectFit: "cover",
                   borderRadius: "50%",
+                  marginBottom:"20px",
+                  
                 }}
               />
               <p>
@@ -104,7 +110,7 @@ function Testimonials() {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="swiper-slide">
             <div className="slide">
               <img
                 src="./src/assets/pexels-simon-robben-55958-614810.jpg"
@@ -113,6 +119,8 @@ function Testimonials() {
                   height: "170px",
                   objectFit: "cover",
                   borderRadius: "50%",
+                  marginBottom:"20px",
+                  
                 }}
               />
               <p>
@@ -135,7 +143,7 @@ function Testimonials() {
         ;
       </div>
     </section>
-  );
+  )
 }
 
 export default Testimonials;
