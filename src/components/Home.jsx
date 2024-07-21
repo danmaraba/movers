@@ -19,6 +19,7 @@ function Navbar() {
   const about = useRef(null);
   const services = useRef(null);
   const contacts = useRef(null);
+  const navbarRef = useRef(null);
   const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
@@ -39,20 +40,34 @@ function Navbar() {
   }, [showLinks]);
   // console.log(links);
 
-  const navbar = document.getElementById("navbar");
+  const closeMenu=()=>{
+    setShowLinks(false)
+  }
+
+  // const navbar = document.getElementById("navbar");
+  const navbar=navbarRef.current
   const handleScroll = () => {
-    if (window.scrollY === 0) {
-      navbar.style.boxShadow = "0 5px 15px rgba(0, 0, 0, 0.1)";
-    } else {
-      navbar.style.boxShadow = "none";
+    if(navbar){
+      if (window.scrollY === 0) {
+        navbar.style.boxShadow = "0 5px 15px rgba(0, 0, 0, 0.1)";
+      } else {
+        navbar.style.boxShadow = "none";
+      }
     }
   };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   window.addEventListener("scroll", handleScroll);
 
   return (
     <>
       <header>
-        <nav id="navbar" ref={home}>
+        <nav id="navbar" >
           <div className="nav-center">
             <div className="nav-header">
               <img
@@ -70,20 +85,20 @@ function Navbar() {
               </button>
             </div>
             <div className="links-container" ref={linksContainerRef}>
-              <ul className="links" ref={linkRef}>
-                <li>
+              <ul className="links" ref={linkRef} >
+                <li onClick={closeMenu} >
                   <Link to="/">Home</Link>
                 </li>
-                <li>
+                <li onClick={closeMenu}>
                   <Link to="/about">About</Link>
                 </li>
-                <li>
+                <li onClick={closeMenu}>
                   <Link to="/services">Services</Link>
                 </li>
-                <li>
+                <li onClick={closeMenu}>
                   <Link to="/contacts">Contacts</Link>
                 </li>
-                <li id="login-link">
+                <li id="login-link" onClick={closeMenu}>
                   <Link to="/login">Login</Link>
                 </li>
               </ul>
