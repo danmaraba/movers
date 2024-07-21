@@ -304,11 +304,16 @@ li a:hover {
 .contacts-section {
   margin-top: 12rem;
   margin-left: 8rem;
+  flex:1 1 200px;
+  padding:20px;
+  border-radius:8px;
 }
 
 
 .contacts-title {
   text-align: center;
+  margin-top:0;
+  font-size:24px;
 }
 
 .image-contacts {
