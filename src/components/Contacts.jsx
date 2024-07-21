@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef,useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationDot,
@@ -8,14 +8,25 @@ import {
 import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 function Contacts() {
-  const navbar = document.getElementById("contact");
+  // const navbar = document.getElementById("contact");
+  const navbarRef = useRef(null);
+  const navbar=navbarRef.current
   const handleScroll = () => {
-    if (window.scrollY === 0) {
-      navbar.style.boxShadow = "0 5px 15px rgba(0, 0, 0, 0.1)";
-    } else {
-      navbar.style.boxShadow = "none";
+    if(navbar){
+      if (window.scrollY === 0) {
+        navbar.style.boxShadow = "0 5px 15px rgba(0, 0, 0, 0.1)";
+      } else {
+        navbar.style.boxShadow = "none";
+      }
     }
   };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   window.addEventListener("scroll", handleScroll);
 
   // const contacts=useRef(null)
