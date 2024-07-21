@@ -303,10 +303,12 @@ li a:hover {
 
 .contacts-section {
   margin-top: 12rem;
-  margin-left: 8rem;
-  flex:1 1 200px;
+  /* margin-left: 8rem; */
+  flex:1 1 300px;
   padding:20px;
   border-radius:8px;
+  max-width:100%;
+  padding:10px;
 }
 
 
@@ -317,24 +319,19 @@ li a:hover {
 }
 
 .image-contacts {
-  width: 100%;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -25rem;
-  margin-left: 10rem;
+  overflow:hidden;
+  flex:1 1 300px;
 }
 
-.image-contacts img {
+.image-contacts img{
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
   display: block;
-  /* margin-top:-60rem;
-  margin-left:10rem; */
-  margin: auto;
-  border-radius: 12px;
+  border-radius:12px;
+  padding:20px;
+  margin-top:12rem;
 }
+
 
 .input-container {
   /* position: relative; */
@@ -345,6 +342,13 @@ li a:hover {
 .message-container textarea{
   width:100%;
   padding:10px;
+}
+
+.message-container textarea{
+  min-height:150px;
+  max-width:300px;
+  resize:vertical;
+  border-radius: 4px;
 }
 
 .input-container input {
@@ -370,12 +374,12 @@ li a:hover {
   transition: transform 1s ease-in-out;
 }
 
-#myTextArea {
+/* #myTextArea {
   width: 400px;
   height: 100px;
   border-radius: 4px;
   border-color: var(--clr-brand-5);
-}
+} */
 
 textarea::placeholder {
   padding: 1.5rem;
@@ -385,9 +389,7 @@ textarea:focus {
   outline: none;
 }
 
-.input-container input:focus + .underline {
-  transform: scaleX(1);
-}
+
 
 .submitt-btn {
   padding: 4px 12px;
@@ -398,12 +400,18 @@ textarea:focus {
   font-size: 20px;
   margin: 8px 16px;
   cursor: pointer;
+  transition:background-color 0.3s ease;
+}
+
+.submitt-btn:hover{
+  /* background-color:red; */
 }
 
 .contacts-section-container{
   display:flex;
   flex-wrap:wrap;
   gap:20px;
+  padding:20px;
 }
 
 .contacts-footer-section {
@@ -566,6 +574,26 @@ html {
     .contact-socials {
       width: 100%; /* Full width for each section on smaller screens */
       margin-bottom: 10px; /* Space between sections */
+    }
+
+    .contacts-section-container {
+      flex-direction: column; /* Stack sections vertically on smaller screens */
+      /* align-items:center; */
+    }
+  
+    .contacts-section,
+    .image-contacts {
+      flex: 1 1 auto; /* Allow sections to grow and shrink */
+      width: 100%; /* Full width on smaller screens */
+    }
+
+    .contacts-section{
+      margin-top:4rem;
+      padding:4px;
+    }
+  
+    .contacts-title {
+      font-size: 20px; /* Adjust font size for smaller screens */
     }
 
    
