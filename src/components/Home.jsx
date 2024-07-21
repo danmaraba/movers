@@ -153,79 +153,111 @@ function Navbar() {
       <Testimonials />
       {/* contacts */}
       <section className="contacts-footer-section">
-      <div className="contacts-container">
-      <p className="heading">
-          We are here to facilitate safe and seamless delivery of your parcel!
-        </p>
-        <div className="contact-details-section">
-          <div className="contact-about">
-            <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div className="quick-links">
-            <h3>Quick Links</h3>
-            <div className="contact-links">
-              <ul>
-                <li>
-                  <Link style={{textDecoration:"none",transition:"0.3s linear"}} onClick={() => {
-                    scrollToSection(home);
-                  }}>Home</Link>
-                </li>
-                <li>
-                  <Link style={{textDecoration:"none",transition:"0.3s linear"}} onClick={() => {
-                    scrollToSection(about);
-                  }}>About</Link>
-                </li>
-                <li>
-                  <Link style={{textDecoration:"none",transition:"0.3s linear"}} onClick={() => {
-                    scrollToSection(services);
-                  }}>Services</Link>
-                </li>
-                <li>
-                  <Link style={{textDecoration:"none",transition:"0.3s linear"}}  onClick={() => {
-                    scrollToSection(contacts);
-                  }}>Contacts</Link>
-                </li>
-              </ul>
+        <div className="contacts-container">
+          <p className="heading">
+            We are here to facilitate safe and seamless delivery of your parcel!
+          </p>
+          <div className="contact-details-section">
+            <div className="contact-about">
+              <h3>About Us</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div className="quick-links">
+              <h3>Quick Links</h3>
+              <div className="contact-links">
+                <ul>
+                  <li>
+                    <Link
+                      style={{
+                        textDecoration: "none",
+                        transition: "0.3s linear",
+                      }}
+                      onClick={() => {
+                        scrollToSection(home);
+                      }}
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      style={{
+                        textDecoration: "none",
+                        transition: "0.3s linear",
+                      }}
+                      onClick={() => {
+                        scrollToSection(about);
+                      }}
+                    >
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      style={{
+                        textDecoration: "none",
+                        transition: "0.3s linear",
+                      }}
+                      onClick={() => {
+                        scrollToSection(services);
+                      }}
+                    >
+                      Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      style={{
+                        textDecoration: "none",
+                        transition: "0.3s linear",
+                      }}
+                      onClick={() => {
+                        scrollToSection(contacts);
+                      }}
+                    >
+                      Contacts
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="contact-contact">
+              <h3>Contacts</h3>
+              <p>
+                <span>
+                  <FontAwesomeIcon icon={faLocationDot} className="icon" />
+                  Sarit,Nairobi.
+                </span>
+              </p>
+              <p style={{ marginBottom: "2rem", marginTop: "2rem" }}>
+                <span>
+                  <FontAwesomeIcon icon={faPhone} className="icon" />
+                </span>
+                +2547XXXXXXXX
+              </p>
+              <p>
+                <span>
+                  <FontAwesomeIcon icon={faEnvelope} className="icon" />
+                  movers@gmail.com
+                </span>
+              </p>
+            </div>
+            <div className="contact-socials">
+              <h3>Let us Connect</h3>
+              <span>
+                <a href="#tiktok"></a>
+                <FontAwesomeIcon icon={faTiktok} className="icon" />
+              </span>
+              <span>
+                <a href="#instagram"></a>
+                <FontAwesomeIcon icon={faInstagram} className="icon" />
+              </span>
             </div>
           </div>
-          <div className="contact-contact">
-            <h3>Contacts</h3>
-            <p>
-              <span>
-                <FontAwesomeIcon icon={faLocationDot} className="icon" />
-                Sarit,Nairobi.
-              </span>
-            </p>
-            <p style={{marginBottom:"2rem",marginTop:"2rem"}}>
-              <span>
-                <FontAwesomeIcon icon={faPhone} className="icon" />
-              </span>
-              +2547XXXXXXXX
-            </p>
-            <p>
-              <span>
-                <FontAwesomeIcon icon={faEnvelope} className="icon" />
-                movers@gmail.com
-              </span>
-            </p>
-          </div>
-          <div className="contact-socials">
-            <h3>Let us Connect</h3>
-            <span>
-              <a href="#tiktok"></a>
-              <FontAwesomeIcon icon={faTiktok} className="icon" />
-            </span>
-            <span>
-              <a href="#instagram"></a>
-              <FontAwesomeIcon icon={faInstagram} className="icon" />
-            </span>
-          </div>
+          <p className="footer">
+            &copy; <span>{date}</span> movers.all rights reserved
+          </p>
         </div>
-        <p className="footer">
-          &copy; <span>{date}</span> movers.all rights reserved
-        </p>
-      </div>
       </section>
     </>
   );
