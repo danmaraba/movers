@@ -1,37 +1,33 @@
 {
-    "routes":[
-        {
-            "src":"/",
-            "dest":"/"
-        },
-        {
-            "src":"/about",
-            "dest":"/"
-        },
-        {
-            "src":"/services",
-            "dest":"/"
-        },
-        {
-            "src":"/contacts",
-            "dest":"/"
-        },
-        {
-            "src":"/login",
-            "dest":"/"
-        },
-        {
-            "src":"/register",
-            "dest":"/"
-        },
-        {
-            "src":"/profile",
-            "dest":"/"
-        }
-    ]
-      
+  "files": ["src/assets/images/**"],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/"
+    },
+    {
+      "src": "/about",
+      "dest": "/"
+    },
+    {
+      "src": "/services",
+      "dest": "/"
+    },
+    {
+      "src": "/contacts",
+      "dest": "/"
+    },
+    {
+      "src": "/login",
+      "dest": "/"
+    },
+    {
+      "src": "/register",
+      "dest": "/"
+    },
+    {
+      "src": "/profile",
+      "dest": "/"
+    }
+  ]
 }
-
-
-    
-
