@@ -26,7 +26,7 @@ function Testimonials() {
           <SwiperSlide className="swiper-slide">
             <div className="slide">
               <img
-                src="./Images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+                src="./assets/Images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
                 style={{
                   width: "170px",
                   height: "170px",
@@ -55,7 +55,7 @@ function Testimonials() {
           <SwiperSlide className="swiper-slide">
             <div className="slide">
               <img
-                src="./Images/pexels-gabby-k-5876695.jpg"
+                src="./assets/Images/pexels-gabby-k-5876695.jpg"
                 style={{
                   width: "170px",
                   height: "170px",
@@ -84,7 +84,7 @@ function Testimonials() {
           <SwiperSlide className="swiper-slide">
             <div className="slide">
               <img
-                src="./Images/pexels-justin-shaifer-501272-1222271.jpg"
+                src="./assets/Images/pexels-justin-shaifer-501272-1222271.jpg"
                 style={{
                   width: "170px",
                   height: "170px",
@@ -113,7 +113,7 @@ function Testimonials() {
           <SwiperSlide className="swiper-slide">
             <div className="slide">
               <img
-                src="./Images/pexels-simon-robben-55958-614810.jpg"
+                src="./assets/Images/pexels-simon-robben-55958-614810.jpg"
                 style={{
                   width: "170px",
                   height: "170px",
