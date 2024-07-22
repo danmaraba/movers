@@ -83,34 +83,34 @@ function Navlinks() {
               <li
                 onClick={() => {
                   scrollToSection(home);
-                }}
+                }} style={{transition:"all 0.3s linear"}}
               >
                 <NavLink to="/">Home</NavLink>
               </li>
               <li
                 onClick={() => {
                   scrollToSection(about);
-                }}
+                }} style={{transition:"all 0.3s linear"}}
               >
                 <NavLink to="/about">About</NavLink>
               </li>
               <li
                 onClick={() => {
                   scrollToSection(services);
-                }}
+                }} style={{transition:"all 0.3s linear"}}
               >
                 <NavLink to="/services">Services</NavLink>
               </li>
               <li
                 onClick={() => {
                   scrollToSection(contacts);
-                }}
+                }} style={{transition:"all 0.3s linear"}}
               >
                 <NavLink to="/contacts">Contacts</NavLink>
               </li>
               <li id="login-link" onClick={() => {
                   scrollToSection(login);
-                }}>
+                }} style={{transition:"all 0.3s linear"}}>
                 <NavLink to="/login">Login</NavLink>
               </li>
             </ul>
