@@ -62,7 +62,6 @@ function Testimonials() {
                   objectFit: "cover",
                   borderRadius: "50%",
                   marginBottom:"20px",
-                  
                 }}
               />
               <p>
