@@ -69,7 +69,7 @@ function Navbar() {
           <div className="nav-center">
             <div className="nav-header">
               <img
-                src="src/assets/images/logo-for-delivery-company.png"
+                src="./images/logo-for-delivery-company.png"
                 alt="logo"
                 className="logo"
               />
@@ -109,7 +109,7 @@ function Navbar() {
         <h1>About Us</h1>
         <div className="abt">
           <img
-            src="src/assets/images/pexels-tima-miroshnichenko-6169668.jpg"
+            src="./images/pexels-tima-miroshnichenko-6169668.jpg"
             alt="img"
             className="img"
           />
@@ -129,7 +129,7 @@ function Navbar() {
         <div className="card-container">
           <div className="card">
             <img
-              src="src/assets/images/pexels-tima-miroshnichenko-6169869.jpg"
+              src="./images/pexels-tima-miroshnichenko-6169869.jpg"
               alt="img"
               className="card-img"
             />
@@ -146,7 +146,7 @@ function Navbar() {
           </div>
           <div className="card">
             <img
-              src="src/assets/images/pexels-negativespace-97079.jpg"
+              src="./images/pexels-negativespace-97079.jpg"
               alt="car hire"
               className="card-img"
             />
