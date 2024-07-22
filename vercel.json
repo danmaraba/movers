@@ -1,0 +1,32 @@
+{
+    "routes":[
+        {
+            "src":"/",
+            "dest":"/"
+        },
+        {
+            "src":"/about",
+            "dest":"/"
+        },
+        {
+            "src":"/services",
+            "dest":"/"
+        },
+        {
+            "src":"/contacts",
+            "dest":"/"
+        },
+        {
+            "src":"/login",
+            "dest":"/"
+        },
+        {
+            "src":"/register",
+            "dest":"/"
+        },
+        {
+            "src":"/profile",
+            "dest":"/"
+        }
+    ]
+}
