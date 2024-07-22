@@ -69,7 +69,7 @@ function Navbar() {
           <div className="nav-center">
             <div className="nav-header">
               <img
-                src="./src/assets/logo-for-delivery-company.png"
+                src="src/assets/logo-for-delivery-company.png"
                 alt="logo"
                 className="logo"
               />
