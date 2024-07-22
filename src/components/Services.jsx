@@ -26,7 +26,7 @@ function Services() {
         <div className="card-container">
           <div className="card">
             <img
-              src="./images/pexels-tima-miroshnichenko-6169869.jpg"
+              src="./Images/pexels-tima-miroshnichenko-6169869.jpg"
               alt="img"
             />
             <div className="card-content">
@@ -37,7 +37,7 @@ function Services() {
           </div>
           <div className="card">
             <img
-              src="./images/pexels-negativespace-97079.jpg"
+              src="./Images/pexels-negativespace-97079.jpg"
               alt="car hire"
             />
             <div className="card-content">

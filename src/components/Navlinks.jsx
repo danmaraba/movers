@@ -65,7 +65,7 @@ function Navlinks() {
         <div className="nav-center">
           <div className="nav-header">
             <img
-              src="./images/logo-for-delivery-company.png"
+              src="./Images/logo-for-delivery-company.png"
               alt="logo"
               className="logo"
             />
