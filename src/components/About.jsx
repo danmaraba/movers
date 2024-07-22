@@ -13,7 +13,7 @@ function About() {
       <h1>About Us</h1>
       <div className="abt">
         <img
-          src="./images/pexels-tima-miroshnichenko-6169668.jpg"
+          src="./Images/pexels-tima-miroshnichenko-6169668.jpg"
           alt="img"
           className="img"
         />

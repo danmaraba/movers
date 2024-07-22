@@ -30,7 +30,7 @@ function SignInWithGoogle() {
   return (
     <div>
       <p className='google-p'>--or continue with--</p>
-      <img src="./images/google.png" alt="img" className='google-photo' onClick={googleLogin}/>
+      <img src="./Images/google.png" alt="img" className='google-photo' onClick={googleLogin}/>
     </div>
   )
 }
