@@ -59,7 +59,7 @@ function Contacts() {
         </div>
         <div className="image-contacts">
           <img
-            src="src/assets/images/rodrigo-abreu-lq9PxpwDZUk-unsplash.jpg"
+            src="./images/rodrigo-abreu-lq9PxpwDZUk-unsplash.jpg"
             alt="image-contact"
           />
         </div>
