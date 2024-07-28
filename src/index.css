@@ -507,6 +507,10 @@ html {
   .about h1 {
     font-size:1.5rem;
   }
+
+  .abt p {
+   font-size:0.875rem;
+   }
 }
 
 
