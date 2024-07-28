@@ -523,6 +523,30 @@ html {
   .card-content .btn{
     font-size:1.2rem;
   }
+
+  .testimonials h1{
+    font-size:1.2rem;
+  }
+
+  .heading{
+    font-size:0.875rem;
+  }
+
+  .contact-about h3{
+    font-size:1.5rem;
+  }
+  
+  .contact-about p{
+    font-size:0.875rem;
+  }
+
+  .quick-links h3{
+    font-size:1.5rem;
+  }
+
+  .contact-links ul li{
+    font-size:1.2rem;
+  }
   
 }
 
