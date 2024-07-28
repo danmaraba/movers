@@ -547,6 +547,27 @@ html {
   .contact-links ul li{
     font-size:1.2rem;
   }
+
+  .contact-contact h3{
+    font-size:1.5rem;
+  }
+
+  .contact-contact p{
+    font-size:1.2rem;
+  }
+
+  .contact-socials h3{
+    font-size:1.5rem;
+  }
+
+  .contact-socials span{
+    font-size:1.2rem;
+  }
+
+  .footer{
+    font-size:1.2rem;
+  }
+  
   
 }
 
