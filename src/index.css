@@ -567,6 +567,10 @@ html {
   .footer{
     font-size:1.2rem;
   }
+
+  .links li{
+    font-size:1.2rem;
+  }
   
   
 }
