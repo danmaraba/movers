@@ -502,6 +502,14 @@ html {
   justify-content:space-between
 }
 
+@media screen and (max-width: 480px) {
+  
+  .about h1 {
+    font-size:1.5rem;
+  }
+}
+
+
 @media screen and (min-width: 801px) {
   .nav-center {
     max-width: 1170px;
@@ -533,41 +541,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-  /* header{
-    min-height:40vh;
-  }
-
-  .nav-header{
-    margin-left:4rem;
-    margin-right:4rem;
-  } */
-
-  /* .contacts {
-    max-width: 100%;
-    width: 100%;
-  } */
-  /* .form-form-container{
-    margin-left:-35rem;
-    width:150px;
-    padding-left:2rem;
-    padding-right:4rem;
-  }
-
-
-
-  }
-
-  .input-container{
-    padding-left:-12rem;
-  }
-
-
-  .form-form-container{
-    /* width:auto; */
-
-    /* .contacts-footer-section{
-      grid-template-columns:300px 1fr;
-    } */
+  
     .swiper-slide {
       flex-direction: column; /* Stack slides vertically on smaller screens */
     }
